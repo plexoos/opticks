@@ -46,7 +46,7 @@
 
 #include "PLOG.hh"
 
-const plog::Severity OpticksIdx::LEVEL = PLOG::EnvLevel("OpticksIdx", "debug"); 
+const plog::Severity OpticksIdx::LEVEL = SLOG::EnvLevel("OpticksIdx", "debug"); 
 
 
 /**
