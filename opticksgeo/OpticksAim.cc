@@ -35,7 +35,7 @@
 #include "PLOG.hh"
 
 
-const plog::Severity OpticksAim::LEVEL = PLOG::EnvLevel("OpticksAim", "DEBUG") ; 
+const plog::Severity OpticksAim::LEVEL = SLOG::EnvLevel("OpticksAim", "DEBUG") ; 
 
 int OpticksAim::Preinit() // static 
 {

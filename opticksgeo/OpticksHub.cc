@@ -80,7 +80,7 @@
 
 #include "PLOG.hh"
 
-const plog::Severity OpticksHub::LEVEL = PLOG::EnvLevel("OpticksHub", "DEBUG") ; 
+const plog::Severity OpticksHub::LEVEL = SLOG::EnvLevel("OpticksHub", "DEBUG") ; 
 
 /**
 
