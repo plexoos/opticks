@@ -4,6 +4,7 @@ project(${name} VERSION 0.1.0)
 include(OpticksBuildOptions)   
 
 find_package(OpticksCore REQUIRED CONFIG)
+find_package(plog REQUIRED)
 
 #find_package(OpenMeshRap REQUIRED CONFIG)
 set(OpenMeshRap_FOUND NO)
