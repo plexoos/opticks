@@ -47,7 +47,7 @@
 
 #include "PLOG.hh"
 
-const plog::Severity OpticksGen::LEVEL = PLOG::EnvLevel("OpticksGen", "DEBUG") ; 
+const plog::Severity OpticksGen::LEVEL = SLOG::EnvLevel("OpticksGen", "DEBUG") ; 
 
 
 NPY<float>* OpticksGen::getInputGensteps() const 

@@ -4,6 +4,7 @@ project(${name} VERSION 0.1.0)
 include(OpticksBuildOptions)   
 
 find_package(OpticksCore REQUIRED CONFIG)
+find_package(plog REQUIRED)
 
 #find_package(OpenMeshRap REQUIRED CONFIG)
 set(OpenMeshRap_FOUND NO)
@@ -45,7 +46,10 @@ set(FORMER_HEADERS
 
 
 add_library( ${name}  SHARED ${SOURCES})
-target_include_directories( ${name} PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}> )
+target_include_directories( ${name} PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
+    $<INSTALL_INTERFACE:include>
+    $<INSTALL_INTERFACE:include/${name}>
+)
 target_compile_definitions( ${name} PUBLIC OPTICKS_OKGEO )
 target_link_libraries( ${name} PUBLIC  Opticks::OpticksCore )
 

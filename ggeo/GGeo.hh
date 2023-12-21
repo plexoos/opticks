@@ -345,6 +345,7 @@ class GGEO_API GGeo : public GGeoBase, public NConfigurable, public SGeo {
         int getFrame(sframe& fr, int ins_idx ) const ; 
         std::string descBase() const ; 
         int  lookup_mtline(int mtindex) const ; 
+        std::string desc_mt() const ; 
 
 
         std::string        descMesh() const ;

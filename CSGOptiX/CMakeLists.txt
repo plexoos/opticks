@@ -122,7 +122,10 @@ WITH_THRUST compile definition
 
 target_compile_definitions( ${name} PRIVATE WITH_THRUST )
 
-
+target_include_directories( ${name} PUBLIC
+    $<INSTALL_INTERFACE:include>
+    $<INSTALL_INTERFACE:include/CSGOptiX>
+)
 
 target_link_libraries(${name} 
      PUBLIC 

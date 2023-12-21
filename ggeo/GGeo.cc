@@ -1181,6 +1181,11 @@ int GGeo::lookup_mtline(int mtindex) const
     return -1 ; 
 }
 
+std::string GGeo::desc_mt() const
+{
+    return "GGeo::desc_mt" ; 
+}
+
 
 
 

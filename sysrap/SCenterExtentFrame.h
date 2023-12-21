@@ -39,8 +39,8 @@ struct SYSRAP_API SCenterExtentFrame
     static glm::tmat4x4<T> XYZ_to_RTP( T theta, T phi );
     static glm::tmat4x4<T> RTP_to_XYZ( T theta, T phi );
 
-    SCenterExtentFrame( float  _cx, float  _cy, float  _cz, float  _extent, bool rtp_tangential, bool extent_scale ) ; 
-    SCenterExtentFrame( double _cx, double _cy, double _cz, double _extent, bool rtp_tangential, bool extent_scale ) ; 
+    SCenterExtentFrame( float  _cx, float  _cy, float  _cz, float  _extent, bool rtp_tangential, bool extent_scale = false) ;
+    SCenterExtentFrame( double _cx, double _cy, double _cz, double _extent, bool rtp_tangential, bool extent_scale = false) ;
 
     void init();  
     void dump(const char* msg="SCenterExtentFrame::dump") const ; 
